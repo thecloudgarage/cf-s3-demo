@@ -1,5 +1,7 @@
 # CF S3 Demo
 
+>> This repo is cloned from cloudfoundry samples. gradle-wrapper.properties has been changed from the original repo replacing http with https in the distributionUrl else I was getting a 403 error
+
 This is a simple example of using Amazon S3 (or a different S3-compatible service) for asset storage. It is an image catalog to which you can upload images and see them on the main page.
 
 ## Running Locally
