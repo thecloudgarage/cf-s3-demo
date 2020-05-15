@@ -48,7 +48,7 @@ $ java -jar build/libs/cf-s3-demo.jar
 
 * Browse to `http://localhost:8080`
 
-## Running on Cloud Foundry
+## Running on Cloud Foundry (PIVOTAL WEB SERVICES)
 
 Assuming you already have an account at http://run.pivotal.io:
 
@@ -57,6 +57,11 @@ Assuming you already have an account at http://run.pivotal.io:
 ```
 $ cf create-service cleardb spark mysql-service
 ```
+## INSTRUCTIONS FOR Running ON SELF HOSTED TANZU APPLICATION SERVICES ON ANY IAAS INCLUDING VSPHERE, AWS, GCP, etc..
+
+* Download the MySQL service tile from Pivotal Network
+* Install the tile and configure it to create a Service broker (Note: there are pre-requisites for ASGs)
+* Create the service either via CLI or via Apps Manager in the respective organization space
 
 * Create a user-provided service, making sure its name begins with "s3". It should have the following credentials (assign values appropriate for your environment):
     * `accessKey`
